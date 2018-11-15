@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="/reviews.css">
+<link rel="stylesheet" type="text/css" href="/bootstrap.css">
+	<% include header-z.ejs %>
+	<% include search.ejs %>
+
+	<div class="container">
+	<div class="row">
+
+	<% var i = 0;
+	while(i<reviews.length){ %>
+		 <div class="col-4 reviews">
+			
+	    		<div class="row">
+		    	<div class="col-4">
+		    		<h5 class="rotate"><a href="/myReviews/<%= reviews[i]['_id'] %>">Modify</a></h5>
+		    	</div>
+		    	<div class="col-8">
+			    	<span><%= reviews[i]['score'] %>/5</span>
+			      	<h3><%= reviews[i]['restaurant'] %> </h3>
+			      	<img src="/<%= reviews[i]['image'] %>">
+			      	<p><%= reviews[i]['description'] %></p>
+			    </div>
+			</div>
+			</a>
+	    </div>
+<%
+		i++;
+	} %>
+
+	  </div>
+	</div>
+
+

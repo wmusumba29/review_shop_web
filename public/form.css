@@ -1,0 +1,114 @@
+form{
+	text-align: center;
+
+}
+
+body{
+	background-color: black;
+}
+
+input: focus {
+    background-color: yellow;
+} 
+
+::placeholder{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	background-color: white;
+	color: black;
+	text-align: center;
+	font-size: 20px;
+
+}
+
+.btn{
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	/*background-color: orange;*/
+	margin-top: -15px;
+	font-size: 50px;
+}
+
+#reviewBox{
+	height: 250px;
+}
+
+
+#outer-border{
+	max-width: 1200px;
+}
+
+#inner-border{
+	border: solid 30px black;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*overflow-x: hidden;*/
+
+}
+
+.container{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	overflow-x: hidden;
+
+}
+
+#reviewForm{
+	max-width: 1000px;
+	background-color: white;
+	border: solid 10px white;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.makeReview{
+	background-color: black;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.yourReview{
+	max-width: 1000px;
+	/*font-family: "Trebuchet MS", Helvetica, sans-serif;*/
+	/*font-family: 'Amarante';font-size: 22px;*/
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	font-size: 120px;
+	text-transform: uppercase;
+	color: black;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.inputBoxes{
+
+	max-width: 1000px;
+	
+/*THIS CENTERS THE ITEM/BOX*/
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+/*THIS CENTERS THE ITEM/BOX*/
+}
+
+.inputTextField{
+	border:solid 4px orange;
+	width: 700px;
+	height: 50px;
+
+}
+
+.selectInputTextField{
+	border:solid 4px orange;
+	width: 710px;
+	height: 50px;
+
+}
+
+.btn{
+	text-transform: uppercase;
+
+}

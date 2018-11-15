@@ -1,0 +1,74 @@
+.regform {
+	background-color:black;
+	font-size: 30px;
+	color: #1b617d;
+	width:40%;
+	padding:20px;
+	margin:30px;
+	align-items: center;
+	justify-content: center;
+	border-radius: 25px;
+	border: 2px solid black;
+}
+
+body {
+	background-size: 1000px;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+h1{
+	display:block;
+	font-size:50px;
+}
+
+input {
+	font-size:20px;
+	display: block;
+	position: relative;
+	width: 100%
+}
+
+input:focus {
+	background-color: black;
+	color:white;
+}
+
+select {
+	font-size: 20px;
+	display: block;
+	width: 100%;
+	
+}
+
+button{
+	font-size: 20px;
+	margin: 20px;
+	float:center;
+	padding:5px;
+	align-items: center;
+	position: relative;
+	margin-left: 30%;
+	width:40%;
+	margin-right: 30%;
+	background-color: #ee8038;
+	border-radius: 25px;
+	color:white;
+}
+
+select option {
+	background:red;
+	color:white;
+}
+
+.nav-isdark{
+	background: #000;
+}
+
+.btn-search{
+	position: none;
+	display: none;
+	width: 125px
+	heigh:42px;
+	padding:2px;
+}

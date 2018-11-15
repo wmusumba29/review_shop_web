@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="/reviews.css">
+<link rel="stylesheet" type="text/css" href="/bootstrap.css">
+<body style="background:orange;">
+<% include header-s.ejs %>
+
+<div class="container">
+  <div class="row">
+
+    <div class="col-6 info">
+      <div class="info-border"> 
+      		
+		<div class="row">
+      			<div class="col-3 info-score"><h3><%= review[0]['score'] %>/5</h3></div>
+      			<div class="col-9 info-name"><%= review[0]['author'] %></div>
+      			<div class="col-12"><img src="/<%= review[0]['image'] %>" ></div>
+      		</div>
+      </div>
+    </div>
+    <div class="col-6 info">
+    	<div class="info-section">
+	    	<h2><%= review[0]['restaurant'] %></h2>
+	      	<hr>
+	      	<p><%= review[0]['description'] %> </p>
+	      	<center>
+	      		<a class="btn btn-light" href="/home">GO BACK</a>
+	     	</center>
+     	</div>
+    </div>
+  </div>
+</div>
+</body>

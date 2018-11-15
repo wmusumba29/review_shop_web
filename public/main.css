@@ -1,0 +1,32 @@
+.navbar img{
+	width:300px;
+	float: left;
+}
+
+.navbar {
+	font-family: 'Lato', sans-serif;
+
+}
+
+h1 {
+	color:white;
+	font-family: 'Bitter', serif;
+	font-size: 70px;
+	margin-left: 50px;
+	margin-top: 30px;
+}
+
+body {
+	background-color: black;
+	color:#ee8038;
+}
+
+
+/*.custom-center {
+	margin:auto;
+}*/
+
+.nav-isdark{
+	background: #000;
+}
+

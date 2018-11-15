@@ -1,0 +1,42 @@
+<link rel="stylesheet" href="/signup.css">
+
+
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+
+<title>Tomato Website</title>
+<body background="signup.jpg">
+
+<% include header-s.ejs %>
+
+
+<h1>Sign up Page </h1>
+
+
+<div class="regform">
+
+<form action="/register" method="POST">
+
+<input type="text" name="name" placeholder="Name" required>
+
+<input type="text" name="age" placeholder="Age" required>
+
+<select name="gender" required>
+  <option value="Male">Male</option>
+  <option value="Female">Female</option>
+  <option value="Non-binary">Non Binary</option>
+</select> 
+
+<input type="text" name="email" placeholder="Email" required>
+
+<input type="password" name="password" placeholder="Password" required>
+
+<input type="text" name="address" placeholder="Address" required>
+
+
+<button> Click to Submit </button>
+
+</form>
+
+</div>
+</body>

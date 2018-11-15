@@ -1,0 +1,58 @@
+<link rel="stylesheet" type="text/css" href="/form.css">
+
+        <style type="text/css">
+        ::placeholder {
+            /*color: red;*/
+            opacity: 1; /* Firefox */
+        }
+  	</style>
+        <% include header-z.ejs %>
+        <div class= makeReview style="max-width: 1300px;">
+                <div class="container">
+                        <form name= reviews action="/test" onsubmit="return validateForm()" method="POST" id="reviewForm" encType="multipart/form-data" >
+                                <div id="inner-border">
+                        <div class="yourReview"> Your Review</div>
+
+                        <br>
+                        <br>
+
+                        <div class="inputBoxes">
+
+                                <span class="holder" >
+                                                <input type="text" name="restuarant" placeholder="Restuarant Name:" class="inputTextField" required="">
+
+
+                                        </span>
+
+                                        <br>
+                                        <br>
+
+
+
+                                        <span class="holder">
+                                                <select id="ratingTag" name="score" class="selectInputTextField">
+                                                        <option value= "1"> 1 </option>
+                                                        <option value= "2"> 2 </option>
+                                                        <option value= "3"> 3 </option>
+                                                        <option value= "4"> 4 </option>
+                                                        <option value= "5"> 5 </option>
+                                                </select>
+                                        </span>
+
+                                        <br>
+                                        <br>
+
+                                        <span class="holder">
+                                                <textarea name="description" placeholder="Write something..." id="reviewBox" class="inputTextField" required=""></textarea>
+                                        </span>
+
+                                </div>
+
+                                        <br>
+                                        <input type="file" name="image" class="btn">
+                                        <input type="submit" value="Submit" class="btn">
+                                <!-- <button class="btn"> Submit </button> -->
+                        </form>
+                        </div>
+                </div>
+        </div>

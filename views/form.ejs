@@ -1,0 +1,43 @@
+<link rel="stylesheet" type="text/css" href="/form.css">
+
+<% include header-z.ejs %>
+
+<div class="makeReview" style="max-width: 1300px;">
+  <div class="container">
+    <form action="/myReviews" method="post" encType="multipart/form-data" class="makeReview" id="reviewForm">
+      <div id="inner-border">
+        <div class="yourReview"> Modify Review</div>
+
+        <div class="inputBoxes">
+            <span class="holder">
+              <input type="text" name ="restaurant" value="<%=myReview[0]%>" class="inputTextField"><br><br>
+            </span>
+
+            <span class="holder">
+              <select id="ratingTag" name="score" class="selectInputTextField">
+                <option selected hidden><%=myReview[1]%></option>
+                <option value= "1"> 1 </option>
+                <option value= "2"> 2 </option>
+                <option value= "3"> 3 </option>
+                <option value= "4"> 4 </option>
+                <option value= "5"> 5 </option>
+              </select>
+            
+            </span>
+
+            <span>
+              <input type="text" name="description" value="<%=myReview[2]%>" class="inputTextField"><br><br>
+            </span>
+
+            <span>
+              <input type="hidden" name="_id" value="<%=myReview[3]%>" class="inputTextField"><br>
+            </span>
+        </div>
+
+        <input type="file" name="image" value="<%=myReview[4]%>" class="btn"><br><br><br>
+        <button class="btn">Submit</button>
+        <button formaction="/myReviewDelete" class="btn">Delete</button>
+      </div>
+    </form>
+  </div>
+</div>

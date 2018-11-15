@@ -1,0 +1,35 @@
+<link rel="stylesheet" href="/signup.css">
+<link rel="stylesheet" href="/bootstrap.css">
+<link rel="stylesheet" href="/main.css">
+<link rel="stylesheet" href="/style.css">
+
+<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+
+<body>
+<% include header-s.ejs %>
+<div>
+
+
+
+    <div class="row">
+        <img id="image" src="/images/picture.jpg">
+    </div>
+    <div id="loginUI">
+        <label id="login">LOG IN</label>
+    </div>
+    <div id="formUI">
+        <form action="/new" method="post">
+            <div class="form-group">
+                <input type="email" name="email"  id="form1" placeholder="E-MAIL"><br>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="form2" placeholder="PASSWORD"><br>
+            </div>
+            <div id="submitButtonID">
+                <button type="submit" class="submitButton">SUBMIT</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+</body>
